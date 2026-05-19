@@ -25,8 +25,9 @@
 #
 # --- REGRAS ---
 # ✅ Usar verbo no infinitivo (adicionar, corrigir, atualizar)
-# ✅ Primeira linha com até 72 caracteres
+# ✅ Primeira linha com até 60 caracteres
 # ✅ Ser claro e descritivo
+# ✅ Usar 1 linha entre cada nova seção da mensagem
 #
 # ❌ NÃO usar verbos conjugados (adicionado, corrigido)
 # ❌ NÃO terminar com ponto final
