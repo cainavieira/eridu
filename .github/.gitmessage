@@ -1,0 +1,48 @@
+# <tipo>: <descrição curta em português>
+# |<----  Máximo 60 caracteres  ---->|
+
+# Corpo da mensagem (opcional)
+# |<----   Quebre em 80 caracteres   ---->|
+
+# Rodapé (opcional)
+# Ex: Por que essa mudança foi necessária?
+# Ex: BREAKING CHANGE: descrição da mudança incompatível
+# closes #<número-da-issue>
+
+
+# --- TIPOS DE COMMIT ---
+# feat: nova funcionalidade
+# fix: correção de bug
+# docs: mudanças na documentação (README, CHANGELOG, CONTRIBUTING # etc.)
+# style: formatação sem alterar comportamento
+# refactor: alteração interna sem mudança de comportamento externo
+# perf: otimização de desempenho
+# test: adição ou ajuste de testes
+# build: mudanças em build/dependências
+# ci: mudanças em integração contínua (GitHub Actions, etc.)
+# chore: manutenção e tarefas auxiliares
+# revert: reverte commit anterior
+#
+# --- REGRAS ---
+# ✅ Usar verbo no infinitivo (adicionar, corrigir, atualizar)
+# ✅ Primeira linha com até 72 caracteres
+# ✅ Ser claro e descritivo
+#
+# ❌ NÃO usar verbos conjugados (adicionado, corrigido)
+# ❌ NÃO terminar com ponto final
+# ❌ NÃO ser vago ("fix: ajustes")
+#
+# --- EXEMPLOS ---
+# feat: adiciona tela de relatório de vendas
+# fix: corrige cálculo de total da venda
+# docs: atualiza seção no README
+# refactor: extrai lógica de estoque para service
+# test: adiciona teste de integração para venda
+# chore: atualiza dependências do Spring
+
+# --- BREAKING CHANGES ---
+# Para mudanças incompatíveis, use ! após o tipo:
+# feat!: alterar estrutura de retorno da API
+#
+# E adicione no rodapé:
+# BREAKING CHANGE: descrição detalhada da mudança incompatível
