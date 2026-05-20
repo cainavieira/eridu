@@ -4,7 +4,6 @@ title: "[DOC] "
 labels: ["documentation"]
 assignees:
   - cainavieira
-type: documentation
 body:
   - type: dropdown
     id: opcoes-acoes
