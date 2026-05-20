@@ -24,12 +24,13 @@
 # revert: reverte commit anterior
 #
 # --- REGRAS ---
-# ✅ Usar verbo no infinitivo (adicionar, corrigir, atualizar)
+# ✅ Usar verbo na terceira pessoa do presente (adiciona, corrige, atualiza)
 # ✅ Primeira linha com até 60 caracteres
 # ✅ Ser claro e descritivo
 # ✅ Usar 1 linha entre cada nova seção da mensagem
 #
 # ❌ NÃO usar verbos conjugados (adicionado, corrigido)
+# ❌ NÃO usar verbos no infinitivo (adicionar, corrigir)
 # ❌ NÃO terminar com ponto final
 # ❌ NÃO ser vago ("fix: ajustes")
 #

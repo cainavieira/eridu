@@ -16,7 +16,7 @@ body:
         - Excluir
         - Modificar
   - type: input
-    id: exemplificação
+    id: localizacao
     attributes:
       label: localização
       description: Qual arquivo ou diretório precisa de alteração?
@@ -24,7 +24,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: explicação
+    id: justificativa
     attributes:
       label: justificativa
       description: Explique o motivo da alteração necessária.
