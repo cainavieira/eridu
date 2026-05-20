@@ -1,0 +1,2 @@
+git config --local commit.gpgsign true == para assinar commits
+git config --local commit.template .github/.gitmessage ==  para ter template de git message
