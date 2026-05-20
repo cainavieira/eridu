@@ -1,0 +1,39 @@
+name: Problema de documentação
+description: Reporte problemas na documentação do projeto.
+title: "[DOC] "
+labels: ["documentation"]
+assignees:
+  - cainavieira
+type: documentation
+body:
+  - type: dropdown
+    id: opcoes-acoes
+    attributes:
+      label: Ação necessária
+      description: Qual ação deve ser tomada?
+      multiple: false
+      options:
+        - Adicionar
+        - Excluir
+        - Modificar
+  - type: input
+    id: exemplificação
+    attributes:
+      label: localização
+      description: Qual arquivo ou diretório precisa de alteração?
+      placeholder: ex. /docs
+    validations:
+      required: false
+  - type: textarea
+    id: explicação
+    attributes:
+      label: justificativa
+      description: Explique o motivo da alteração necessária.
+      placeholder: O README está atualmente desatualizado
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir ao projeto!
+

@@ -1,15 +1,17 @@
-```markdown
+
 # Como contribuir com o ERIDU
 
 ## Padrão de commits (Conventional Commits)
 
 Este projeto usa [Conventional Commits](https://www.conventionalcommits.org).
 
-O template de mensagem está em [.github/.gitmessage](.github/.gitmessage).
+O template de mensagem está em [.github/.gitmessage](.gitmessage).
 
-> Para configurar localmente:
+```bash
+Para configurar localmente:  
 
-git config --local commit.template .github/.gitmessage
+> git config --local commit.template .github/.gitmessage
+```
 
 
 ## Branches
@@ -23,7 +25,7 @@ git config --local commit.template .github/.gitmessage
 
 Sempre trabalhe em branches e delete após o merge. Nunca commite diretamente em `develop` ou `main`.
 
-> Exemplo
+### Exemplo 
 - caina/feat-tela-login
 - caina/fix-estoque-negativo
 - caina/docs-endpoints
@@ -40,4 +42,3 @@ Uma tarefa está concluída quando:
 - Código escrito, revisado e funcionando
 - PR aprovado e mergeado em develop
 - Issue fechada
-```

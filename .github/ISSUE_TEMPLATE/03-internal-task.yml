@@ -1,0 +1,40 @@
+name: Tarefa Interna
+description: Para tarefas técnicas internas como configurações, infraestrutura e refatorações.
+title: "[Interno] "
+labels: ["infra"]
+assignees:
+  - cainavieira
+body:
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria
+      description: Qual o tipo de tarefa?
+      multiple: false
+      options:
+        - Infraestrutura
+        - Configuração
+        - Refatoração
+        - CI/CD
+        - Dependências
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que precisa ser feito e por quê?
+      placeholder: ex. Configurar Docker  para subir PostgreSQL.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de conclusão
+      description: Como saber que essa tarefa está pronta?
+      placeholder: ex. Rodar docker serviço subir sem erro
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: Obrigado por contribuir ao projeto!
