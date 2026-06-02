@@ -1,0 +1,39 @@
+name: GS Commit Message Checker 🚀
+on: 
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+jobs: 
+    check-commit-messages: 
+        name: Check Commit Message
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check Commit Type
+              uses: gsactions/commit-message-checker@v2
+              with:
+                pattern: '^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([\w\-\.]+\))?(!)?: ([\w ])+([\s\S]*)'
+                error: 'A sua primeira linha precisa conter o tipo do commit como: "docs:".'
+
+            - name: Check Verb on title
+              uses: gsactions/commit-message-checker@v2
+              with:
+                pattern: '^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([\w\-\.]+\))?(!)?: (?!\w+r\b)'
+                error: ' O verbo no titulo precisa estar no imperativo.'
+
+            - name: Check Total Body Length
+              uses: gsactions/commit-message-checker@v2
+              with:
+                pattern: '^[^#].{80}'
+                error: 'O tamamho maximo de 80 linhas para o body foi excedido.'
+                excludeDescription: 'true' # optional: this excludes the description body of a pull request
+                excludeTitle: 'true' # optional: this excludes the title of a pull request
+                checkAllCommitMessages: 'true' # optional: this checks all commits associated with a pull request
+                accessToken: ${{ secrets.GITHUB_TOKEN }} # github access token is only required if checkAllCommitMessages is true
+
+            - name: Check for closes/ closed
+              uses: gsactions/commit-message-checker@v2
+              with:
+               pattern: '^(closes|closed) #[0-9]+(, (closes|closed) #[0-9]+)*$'
+               error: 'Voce precisa de ao menos um "closes|closed: #<numero da issue>".' 
